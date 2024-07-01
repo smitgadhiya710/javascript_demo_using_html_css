@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Demo Page</title>
+  <link rel="icon" type="image/x-icon" href="logodemo.png">
+  <script defer src="home.js"></script>
+</head>
+
+<body>
+
+
+  <div class="header">
+    <nav class="navbar">
+      <img src="https://www.ecomdeveloper.com/demo/image/catalog/logodemo.png" title="My  Demo Shop" alt="My  Demo Shop"
+        class="img-responsive" />
+      <ul>
+        <li onclick="formid('login')" id="loginBtn" style="cursor: pointer;">Login</li>
+        <li onclick="formid('signin')" id="signBtn" style="cursor: pointer;">Sign up</li>
+      </ul>
+    </nav>
+
+    <div class="slider">
+      <div class="slides">
+        <img id="imageDisplay" src="https://cdn.pixabay.com/photo/2020/05/29/22/00/field-5236879_640.jpg" />
+        <div class="imgtitle">
+          <h3 id="imgtitle">this is first image</h3>
+        </div>
+        <div class="imgcontent">
+          <p id="imgcontent">Pellentesque faucibus eget sem eget ultrices. Nunc a sem vitae magna pulvinar maximus
+            posuere sed tellus.
+            In vehicula mi nisi. Maecenas faucibus sodales risus dictum suscipit. Fusce ut suscipit lacus, id
+            dignissim lectus. Aliquam et sapien velit. Morbi id neque nunc. Vivamus ullamcorper feugiat enim vitae
+            porttitor. Nulla semper ut tortor id consequat. Vestibulum elementum interdum nisl, a rutrum ex faucibus
+            aliquam. Curabitur velit leo, porttitor ac nunc sit amet, porttitor malesuada ni"
+          </p>
+        </div>
+
+      </div>
+      <button type="button" class="nextbutton" id="nextButton">Next</button>
+      <button type="button" class="prevbutton" id="prevButton">Prev</button>
+    </div>
+  </div>
+
+  <div id="overlay" class="overlay">
+    <div class="login" id="login">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+
+
+      <h2 class="h2">Login</h2>
+      <form action="">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" style="width: 240px;"><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" style="width: 240px;"><br><br><br>
+        <button style="background-color: rgb(63, 157, 229); width: 240px; height:35px;">Login</button><br>
+        <p onclick="formid('signin')" id="signBtn" style="cursor: pointer;">Don't have an account ? <b>Sign up</b></p>
+      </form>
+
+    </div>
+
+    <div class="signin" id="signin">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <h2 class="h2">Sign up</h2>
+      <form action="">
+        <label for="Firstname">Firstname:</label><br>
+        <input type="text" id="firstname" name="username" style="width: 240px;"><br><br>
+        <label for="Lastname">Lastname:</label><br>
+        <input type="text" id="lastname" name="username" style="width: 240px;"><br><br>
+        <label for="Email">Email:</label><br>
+        <input type="text" id="email" name="email" style="width: 240px;"><br><br>
+
+        <button style="background-color: rgb(63, 157, 229); width: 240px; height:35px;">Sign up</button><br>
+        <p onclick="formid('login')" id="loginBtn" style="cursor: pointer;">Already have an account ?<b> Login</b></p>
+      </form>
+    </div>
+  </div>
+
+  <div class="categories" id="categories">
+    <nav class="navbarcategories">
+      <br><br>
+      <li id="k" style="cursor: pointer;">Kids</li>
+      <li id="m" style="cursor: pointer;">Men</li>
+      <li id="w" style="cursor: pointer;">Women</li>
+    </nav>
+
+    <div class="cardsection" id="cardsection">
+      <div class="kids" id="kids" style="display: flex; flex-wrap: wrap;"></div>
+      <div class="mens" id="mens" style="display: none; flex-wrap: wrap;"></div>
+      <div class="womens" id="womens" style="display: none; flex-wrap: wrap;"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class='contectus'>
+      <b>CONTACT US</b><br><br>
+      <i class="fa fa-home">
+        Shop No:556-558 <br>navrangpura ,<br>
+        Ahemdabad <br>,Gujrat
+      </i><br><br>
+      <i class="fa fa-phone"> 666-555-222</i><br><br>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill"
+        viewBox="0 0 16 16">
+        <path
+          d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+      </svg> demoweb1234@gmail.com
+    </div>
+
+    <div class="information">
+      <b>INFORMATION</b> <br><br>
+      About Us<br>
+      Delivery/Track Order <br>
+      Privacy Policy <br>
+      Terms & Conditions <br>
+      Brands <br>
+      Contact Us <br>
+    </div>
+
+    <div class="myaccount">
+      <b>MY ACCOUNT</b><br><br>
+      My Account <br>
+      Order History <br>
+      Wish List <br>
+      Newsletter <br>
+      Specials <br>
+      Returns <br>
+    </div>
+
+    <div class="customerservice">
+      <b>CUSTOMER SERVICE</b><br><br>
+      Gift Certificates <br>
+      Affiliate <br>
+      Login Vendor <br>
+      Browse Seller <br>
+      Delivery Partner <br>
+      Site Map <br>
+    </div>
+  </footer>
+</body>
+</html>

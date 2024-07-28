@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="Product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="https://www.ecomdeveloper.com/demo/image/catalog/logodemo.png">
+    <script defer src="home.js"></script>
+    <script defer src="Footer.js"></script>
+    <script defer src="Product.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <img src="https://www.ecomdeveloper.com/demo/image/catalog/logodemo.png" title="My  Demo Shop"
+                alt="My  Demo Shop" class="img-responsive" />
+            <ul class="catalog" id="catalog">
+                <li class="product" data-target="clothes" style="cursor: pointer;">Clothes</li>
+                <li class="product" data-target="perfume" style="cursor: pointer;">Perfumes</li>
+                <li class="product" data-target="bag" style="cursor: pointer;">Bag</li>
+            </ul>
+            <i class="fa fa-home">
+                <li style="text-align:left; font-display: left; margin-left: 10px; margin-top: 0px;"><a
+                        href="index.html">home</a></li>
+            </i>
+        </nav>
+    </div>
+
+    <div class="product" id="product">
+        <div class="items" id="clothes" style="display: flex; flex-wrap: wrap;"></div>
+        <div class="items" id="perfume" style="display: none; flex-wrap: wrap;"></div>
+        <div class="items" id="bag" style="display: none; flex-wrap: wrap;"></div>
+    </div>
+
+    <footer class="footer">
+        <div class='contectus'>
+            <b>CONTACT US</b><br><br>
+            <i class="fa fa-home">
+                Shop No:556-558 <br>navrangpura ,<br>
+                Ahemdabad <br>,Gujrat
+            </i><br><br>
+            <i class="fa fa-phone"> 666-555-222</i><br><br>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path
+                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+            </svg> demoweb1234@gmail.com
+        </div>
+
+        <div class="information">
+            <a href="Information.html"> <b>INFORMATION</b> </a><br><br>
+            About Us<br>
+            Delivery/Track Order <br>
+            Privacy Policy <br>
+            Terms & Conditions <br>
+            Brands <br>
+            Contact Us <br>
+        </div>
+
+        <div class="myaccount">
+            <a href="Myaccount.html"> <b>MY ACCOUNT</b></a><br><br>
+            My Account <br>
+            Order History <br>
+            Wish List <br>
+            Newsletter <br>
+            Specials <br>
+            Returns <br>
+        </div>
+
+        <div class="customerservice">
+            <b>CUSTOMER SERVICE</b><br><br>
+            Gift Certificates <br>
+            Affiliate <br>
+            Login Vendor <br>
+            Browse Seller <br>
+            Delivery Partner <br>
+            Site Map <br>
+        </div>
+    </footer>
+</body>
+
+</html>

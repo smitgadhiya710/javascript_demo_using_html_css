@@ -7,8 +7,9 @@
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Demo Page</title>
-  <link rel="icon" type="image/x-icon" href="logodemo.png">
+  <link rel="icon" type="image/x-icon" href="https://www.ecomdeveloper.com/demo/image/catalog/logodemo.png">
   <script defer src="home.js"></script>
+  <script defer src="Product.js"></script>
 </head>
 
 <body>
@@ -18,6 +19,18 @@
     <nav class="navbar">
       <img src="https://www.ecomdeveloper.com/demo/image/catalog/logodemo.png" title="My  Demo Shop" alt="My  Demo Shop"
         class="img-responsive" />
+      <ul class="catalog" id="catalog">
+        <a href="Product.html">
+          <li style="cursor: pointer;">Clothes</li>
+        </a>
+        <a href="Product.html">
+          <li style="cursor: pointer;">Perfumes</li>
+        </a>
+        <a href="Product.html">
+          <li style="cursor: pointer;">Bag</li>
+        </a>
+
+      </ul>
       <ul>
         <li onclick="formid('login')" id="loginBtn" style="cursor: pointer;">Login</li>
         <li onclick="formid('signin')" id="signBtn" style="cursor: pointer;">Sign up</li>
@@ -41,8 +54,8 @@
         </div>
 
       </div>
-      <button type="button" class="nextbutton" id="nextButton">Next</button>
-      <button type="button" class="prevbutton" id="prevButton">Prev</button>
+      <button type="button" class="nextbutton" id="nextButton"> &#10095;</button>
+      <button type="button" class="prevbutton" id="prevButton"> &#10094; </button>
     </div>
   </div>
 
@@ -83,17 +96,18 @@
   <div class="categories" id="categories">
     <nav class="navbarcategories">
       <br><br>
-      <li id="k" style="cursor: pointer;">Kids</li>
-      <li id="m" style="cursor: pointer;">Men</li>
-      <li id="w" style="cursor: pointer;">Women</li>
+      <li class="categories" data-target="kids" style="cursor: pointer;">Kids</li>
+      <li class="categories" data-target="mens" style="cursor: pointer;">Men</li>
+      <li class="categories" data-target="womens" style="cursor: pointer;">Women</li>
     </nav>
 
     <div class="cardsection" id="cardsection">
-      <div class="kids" id="kids" style="display: flex; flex-wrap: wrap;"></div>
-      <div class="mens" id="mens" style="display: none; flex-wrap: wrap;"></div>
-      <div class="womens" id="womens" style="display: none; flex-wrap: wrap;"></div>
+      <div class="homepageproduct" id="kids" style="display: flex; flex-wrap: wrap;"></div>
+      <div class="homepageproduct" id="mens" style="display: none; flex-wrap: wrap;"></div>
+      <div class="homepageproduct" id="womens" style="display: none; flex-wrap: wrap;"></div>
     </div>
   </div>
+
 
   <footer class="footer">
     <div class='contectus'>
@@ -111,7 +125,7 @@
     </div>
 
     <div class="information">
-      <b>INFORMATION</b> <br><br>
+      <a href="Information.html"> <b>INFORMATION</b> </a><br><br>
       About Us<br>
       Delivery/Track Order <br>
       Privacy Policy <br>
@@ -121,7 +135,7 @@
     </div>
 
     <div class="myaccount">
-      <b>MY ACCOUNT</b><br><br>
+      <a href="Myaccount.html"> <b>MY ACCOUNT</b></a><br><br>
       My Account <br>
       Order History <br>
       Wish List <br>
@@ -141,4 +155,5 @@
     </div>
   </footer>
 </body>
+
 </html>

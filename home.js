@@ -13,7 +13,7 @@ const data = [
   },
   {
     img: "https://cdn.pixabay.com/photo/2022/09/30/14/30/lavender-7489530_640.jpg",
-    title: "this is third image",
+    title: "Welcome",
     content:
       "Pellentesque faucibus eget sem eget ultrices. Nunc a sem vitae magna pulvinar maximus posuere sed tellus. In vehicula mi nisi. Maecenas faucibus sodales risus dictum suscipit. Fusce ut suscipit lacus, id dignissim lectus. Aliquam et sapien velit. Morbi id neque nunc. Vivamus ullamcorper feugiat enim vitae porttitor. Nulla semper ut tortor id consequat. Vestibulum elementum interdum nisl, a rutrum ex faucibus aliquam. Curabitur velit leo, porttitor ac nunc sit amet, porttitor malesuada nibh",
   },
@@ -59,7 +59,7 @@ function closePopup() {
   signin.style.display = "none";
   overlay.style.display = "none";
 }
-  
+
 function formid(id) {
   signin.style.display = "none";
 
@@ -245,27 +245,41 @@ cardContainer3.innerHTML = cardwomen
   })
   .join("");
 
-const kids = document.getElementById("kids");
-const mens = document.getElementById("mens");
-const womens = document.getElementById("womens");
+// const kids = document.getElementById("kids");
+// const mens = document.getElementById("mens");
+// const womens = document.getElementById("womens");
 
-const k = document.getElementById("k");
-k.addEventListener("click", function () {
-  kids.style.display = "flex";
-  mens.style.display = "none";
-  womens.style.display = "none";
+// const k = document.getElementById("k");
+// k.addEventListener("click", function () {
+//   kids.style.display = "flex";
+//   mens.style.display = "none";
+//   womens.style.display = "none";
+// });
+
+// const m = document.getElementById("m");
+// m.addEventListener("click", function () {
+//   mens.style.display = "flex";
+//   womens.style.display = "none";
+//   kids.style.display = "none";
+// });
+
+// const w = document.getElementById("w");
+// w.addEventListener("click", function () {
+//   womens.style.display = "flex";
+//   mens.style.display = "none";
+//   kids.style.display = "none";
+// });
+
+const categories = document.querySelectorAll(".categories");
+categories.forEach((categories) => {
+  const target = categories.dataset.target;
+  categories.addEventListener("click", () => products(target));
 });
 
-const m = document.getElementById("m");
-m.addEventListener("click", function () {
-  mens.style.display = "flex";
-  womens.style.display = "none";
-  kids.style.display = "none";
-});
-
-const w = document.getElementById("w");
-w.addEventListener("click", function () {
-  womens.style.display = "flex";
-  mens.style.display = "none";
-  kids.style.display = "none";
-});
+function products(id) {
+  const homepageproduct = document.getElementsByClassName("homepageproduct");
+  for (i = 0; i <= homepageproduct.length; i++) {
+    document.getElementById(id).style.display = "flex";
+    homepageproduct[i].style.display = "none";
+  }
+}

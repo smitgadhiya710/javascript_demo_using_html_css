@@ -5,6 +5,7 @@
 .navbar {
   background-color: #f0f0f0;
   padding: 10px;
+  font-size: 20px;
 }
 
 .navbar ul {
@@ -23,7 +24,24 @@
   display: inline-block;
   text-align: left;
 }
+.catalog {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  /* border: solid; */
+  /* border-width: 2px;
+  border-radius: 50px; */
+}
 
+.catalog li {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 5px;
+}
 .body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -54,10 +72,11 @@
   right: 20px;
   /* transform: translateX(-50%); */
   transform: translateY(-1000%);
-  padding: 12px 24px;
-  font-size: 16px;
-  background-color: #a2a2a2;
-  color: #fff;
+  padding:  3px 20px;
+  font-size: 30px;
+  background-color: transparent;
+  color: rgb(255, 248, 248);
+  font-weight: bold;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -68,10 +87,10 @@
   left: 20px;
   /* transform: translateX(-50%); */
   transform: translateY(-1000%);
-  padding: 12px 24px;
-  font-size: 16px;
-  background-color: #a2a2a2;
-  color: #fff;
+  padding:  3px 20px;
+  font-size: 30px;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -115,7 +134,7 @@
 }
 
 .signin {
-  background-color: #cfcfcf;
+  background-color: #fa955e;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -141,6 +160,7 @@
   position: absolute;
   top: 40%;
   left: 10%;
+  right: 10%;
   /* transform: translate(-90%, -90%); */
   font-style: inherit;
   font-size: larger;
@@ -167,7 +187,9 @@
 
 .kids,
 .mens,
-.womens {
+.womens,
+.clothes,
+.perfume {
   display: flex;
   flex-wrap: wrap;
   display: none;
@@ -212,6 +234,7 @@
   justify-content: center;
   margin: 15px;
   background: #e3e2e2;
+  margin-top: 270px;
 }
 .information,
 .contectus,
@@ -222,4 +245,27 @@
   justify-content: center;
   text-align: center;
   letter-spacing: 0.7px;
+}
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f0f0f0;
+  padding-top: 20px;
+}
+.sidebar a {
+  padding: 10px 15px;
+  display: block;
+  color: #333;
+  text-decoration: none;
+  /* transition: background-color 0.3s; */
+}
+.sidebar a:hover {
+  background-color: #ddd;
+}
+.Details {
+  margin-left: 250px;
+  padding: 20px;
 }
